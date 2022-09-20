@@ -1,0 +1,13 @@
+.item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__name {
+    width: 40%;
+}
+
+.item__priority {
+    width: 40%;
+}
