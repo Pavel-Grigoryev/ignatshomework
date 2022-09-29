@@ -11,3 +11,15 @@
 .item__priority {
     width: 40%;
 }
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: goldenrod;
+}
+
+.low {
+    color: green;
+}

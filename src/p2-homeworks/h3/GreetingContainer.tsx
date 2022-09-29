@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
+import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+    users: UserType[] // need to fix any
+    addUserCallback: (name: string) => void// need to fix any
 }
 
 // более простой и понятный для новичков
@@ -12,17 +13,40 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
+        // console.log(e.currentTarget.value.length)
+        if (e.currentTarget.value.trim().length) {
+            setName(e.currentTarget.value);
+            setError('');
+        } else {
+            setName('');
+            setError('name is require!');
+        }
     }
+
+    const onButtonPress = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter'){
+            addUser();
+        }
+
+    }
+
     const addUser = () => {
-        alert(`Hello  !`) // need to fix
+        if (name) {
+            alert(`Hello ${name}!`);
+            addUserCallback(name);
+            setName('');
+        } else {
+            setError('name is require!');
+        }
+        // need to fix
     }
 
-    const totalUsers = 0 // need to fix
+    const totalUsers = users.length;
+    // need to fix
 
     return (
         <Greeting
@@ -31,6 +55,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            onButtonPress={onButtonPress}
         />
     )
 }

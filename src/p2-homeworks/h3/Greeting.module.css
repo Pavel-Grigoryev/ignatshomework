@@ -1,7 +1,39 @@
-.someClass {
+.inputBlock {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+}
 
+.input {
+    min-width: 65%;
+    margin: 10px 10px 10px 0;
+    padding: 10px 7px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+.input:focus-visible {
+    outline: 1px solid black;
 }
 
 .error {
     border: 1px solid red;
 }
+
+.error:focus-visible {
+    outline: 1px solid red;
+}
+
+
+.inputBlock__err {
+    color: red;
+    text-align: left;
+}
+
+.inputBlock__button {
+    margin: 10px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
