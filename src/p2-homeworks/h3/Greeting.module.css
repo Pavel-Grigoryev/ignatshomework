@@ -1,7 +1,20 @@
 .inputBlock {
+    display: flex;
+    align-items: start;
     margin: 0 auto;
     text-align: center;
     width: 400px;
+    height: 75px;
+
+}
+
+.inputWrapper {
+  width: 65%;
+    margin-right: 20px;
+}
+
+.inputBlock__totalUsers {
+    margin-top: 20px;
 }
 
 .input {
@@ -28,12 +41,10 @@
 .inputBlock__err {
     color: red;
     text-align: left;
+    display: block;
 }
 
-.inputBlock__button {
+.inputBlock__buttonWrapper {
     margin: 10px;
-    padding: 10px 30px;
-    border: 1px solid black;
-    border-radius: 7px;
 }
 

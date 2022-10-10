@@ -1,7 +1,56 @@
-.default {
 
+
+.default {
+    padding: 5px 24px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    transition:  background-color .3s ease-in;
+    cursor: pointer;
+    background-color: var(--palette-true-blue);
+    color: var(--palette-white);
+}
+
+.default:disabled {
+    opacity: 0.5;
+    cursor: auto;
 }
 
 .red {
-    background: red;
+    padding: 5px 24px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    transition:  background-color .3s ease-in;
+    cursor: pointer;
+    background-color: var(--palette-cardinal);
+    color: var(--palette-white);
+}
+
+.default:hover {
+    background-color: var(--palette-azure);
+}
+
+.red:hover {
+    background-color: var(--palette-awesome);
+}
+
+.secondary:hover {
+    background-color: var(--palette-lavender);
+}
+
+
+.default:active {
+    background-color: var(--palette-sapphire);
+}
+
+.red:active {
+    background-color: var(--palette-venetian-red);
+}
+
+.button:disabled {
 }

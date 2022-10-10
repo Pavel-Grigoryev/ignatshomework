@@ -1,10 +1,14 @@
 .superInput {
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    padding: 10px 7px;
+    border-radius: 7px;
+    border: 1px solid black;
 
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 1px solid red;
 }
 
 .error {
