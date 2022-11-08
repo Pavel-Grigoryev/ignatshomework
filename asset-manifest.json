@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ignatshomework/static/css/main.3ded75e8.chunk.css",
+    "main.js": "/ignatshomework/static/js/main.bf6adb2c.chunk.js",
+    "main.js.map": "/ignatshomework/static/js/main.bf6adb2c.chunk.js.map",
+    "runtime-main.js": "/ignatshomework/static/js/runtime-main.dd65642c.js",
+    "runtime-main.js.map": "/ignatshomework/static/js/runtime-main.dd65642c.js.map",
+    "static/js/2.8639d9d4.chunk.js": "/ignatshomework/static/js/2.8639d9d4.chunk.js",
+    "static/js/2.8639d9d4.chunk.js.map": "/ignatshomework/static/js/2.8639d9d4.chunk.js.map",
+    "index.html": "/ignatshomework/index.html",
+    "precache-manifest.2d8ef8bab0cbcfeefd73f916fc1ca5af.js": "/ignatshomework/precache-manifest.2d8ef8bab0cbcfeefd73f916fc1ca5af.js",
+    "service-worker.js": "/ignatshomework/service-worker.js",
+    "static/css/main.3ded75e8.chunk.css.map": "/ignatshomework/static/css/main.3ded75e8.chunk.css.map",
+    "static/js/2.8639d9d4.chunk.js.LICENSE.txt": "/ignatshomework/static/js/2.8639d9d4.chunk.js.LICENSE.txt",
+    "static/media/arrow.svg": "/ignatshomework/static/media/arrow.8b8689ab.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd65642c.js",
+    "static/js/2.8639d9d4.chunk.js",
+    "static/css/main.3ded75e8.chunk.css",
+    "static/js/main.bf6adb2c.chunk.js"
+  ]
+}
