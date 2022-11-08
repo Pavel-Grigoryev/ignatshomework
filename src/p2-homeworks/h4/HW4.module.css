@@ -3,14 +3,25 @@
     margin: 0 auto;
 }
 
+.container h2{
+    text-align: center;
+}
+
 .blue {
     border-bottom: 5px solid blue;
 }
 
 .column {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 400px;
+
+}
+
+.column button {
+    margin-bottom: 20px;
 }
 
 .testSpanError {

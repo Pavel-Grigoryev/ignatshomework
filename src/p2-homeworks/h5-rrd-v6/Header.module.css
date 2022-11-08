@@ -1,0 +1,49 @@
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-323px);
+    transition: transform .3s ease-in;
+}
+
+.menu.active {
+    transform:  translateY(-50%) translateX(0px);;
+}
+
+.menuItem {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--palette-black);
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+
+.activeItem {
+    color: var(--palette-azure);
+    text-decoration: underline;
+}
+
+.menuItem:hover {
+    color: var(--palette-azure);
+}
+
+.buttonImg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    transition: transform .3s ease-in;
+}
+
+.buttonImg.active {
+    transform: rotate(180deg);
+}
+
